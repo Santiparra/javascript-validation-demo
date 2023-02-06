@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Validacion JS</title>
-        <script src="formValidation.js"defer></script>
-        <link rel="stylesheet" href="main.scss">
-    </head>
-    <body>
-        <form action="submit">
-            <input type="email" name="email" id="email">
-            <input type="text" name="country" id="country">
-            <input type="number" name="zip-code" id="zip-code">
-            <input type="password" name="password" id="password">
-            <input type="password" name="confirm-password" id="confirm-password">
-            <button type="submit">Enviar</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="formValidation.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Formulario</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Usuario</label>
+                <input type="text" placeholder="Tu nombre de usuario" id="username" />
+                <small>Mensaje de error</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="usuario@email.com" id="email" />
+                <small>Mensaje de error</small>
+            </div>
+            <div class="form-control">
+                <label for="age">Edad</label>
+                <input type="number" placeholder="14" id="age"/>
+                <small>Mensaje de error</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Contraseña</label>
+                <input type="password" placeholder="miContraseña" id="password"/>
+                <small>Mensaje de error</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Repite tu contraseña</label>
+                <input type="password" placeholder="miContraseña (de nuevo)" id="password2"/>
+                <small>Mensaje de error</small>
+            </div>
+            <button>Enviar</button>
         </form>
-    </body>
+    </div>
+</body>
 </html>
